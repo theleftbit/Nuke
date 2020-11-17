@@ -182,7 +182,7 @@ final class Cache<Key: Hashable, Value> {
         center.addObserver(self, selector: #selector(removeAll),
                            name: UIApplication.didReceiveMemoryWarningNotification,
                            object: nil)
-        center.addObserver(self, selector: #selector(didEnterBackground),
+        center.addObserver(self, selector: #selector(a54678907654),
                            name: UIApplication.didEnterBackgroundNotification,
                            object: nil)
         #endif
@@ -263,7 +263,7 @@ final class Cache<Key: Hashable, Value> {
     }
 
     @objc
-    private dynamic func didEnterBackground() {
+    private dynamic func a54678907654() {
         // Remove most of the stored items when entering background.
         // This behavior is similar to `NSCache` (which removes all
         // items). This feature is not documented and may be subject
